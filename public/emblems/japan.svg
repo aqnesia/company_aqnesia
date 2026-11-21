@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="jp-bg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f2f4f8"/>
+      <stop offset="100%" stop-color="#dde3ed"/>
+    </radialGradient>
+    <radialGradient id="jp-sun" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#dd1133"/>
+      <stop offset="85%" stop-color="#bc002d"/>
+      <stop offset="100%" stop-color="#88001f"/>
+    </radialGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae082"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#9a791a"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#181520" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Card Surface -->
+  <rect width="800" height="500" rx="32" fill="url(#jp-bg)" stroke="#181520" stroke-width="3" stroke-opacity="0.15"/>
+  <rect x="24" y="24" width="752" height="452" rx="20" fill="none" stroke="#181520" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="6 6"/>
+
+  <!-- Hinomaru Sun Core with Subtle Shadow -->
+  <circle cx="400" cy="220" r="105" fill="url(#jp-sun)" filter="url(#soft-shadow)"/>
+
+  <!-- Imperial Chrysanthemum 16 Petals in Gold -->
+  <g transform="translate(400, 220)" stroke="url(#gold-grad)" stroke-width="2.5" fill="none" opacity="0.95">
+    <circle r="28" fill="url(#gold-grad)"/>
+    <circle r="42" stroke="url(#gold-grad)" stroke-width="2" fill="none"/>
+    <!-- 16 Radial Petals -->
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(22.5)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(45)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(67.5)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(90)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(112.5)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(135)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(157.5)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(180)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(202.5)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(225)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(247.5)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(270)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(292.5)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(315)" fill="url(#gold-grad)"/>
+    <path d="M0 -30 C-9 -55, -8 -85, 0 -95 C8 -85, 9 -55, 0 -30 Z" transform="rotate(337.5)" fill="url(#gold-grad)"/>
+  </g>
+
+  <!-- Typography & Official Metadata -->
+  <text x="400" y="380" font-family="'Space Grotesk', 'Syne', sans-serif" font-size="34" font-weight="700" letter-spacing="0.28em" fill="#181520" text-anchor="middle">JAPAN</text>
+  <text x="400" y="415" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="600" letter-spacing="0.4em" fill="#bc002d" text-anchor="middle">日本国 · NIPPON</text>
+
+  <!-- Technical Corner Marks -->
+  <text x="48" y="60" font-family="monospace" font-size="12" fill="#181520" opacity="0.6" letter-spacing="0.1em">FIG. JP-01 // ASIA PACIFIC</text>
+  <text x="752" y="60" font-family="monospace" font-size="12" fill="#181520" opacity="0.6" letter-spacing="0.1em" text-anchor="end">LAT 35.6762° N</text>
+  <text x="48" y="450" font-family="monospace" font-size="12" fill="#181520" opacity="0.6" letter-spacing="0.1em">IMPERIAL SEAL · HINOMARU</text>
+  <text x="752" y="450" font-family="monospace" font-size="12" fill="#181520" opacity="0.6" letter-spacing="0.1em" text-anchor="end">TOKYO ALLIANCE</text>
+</svg>

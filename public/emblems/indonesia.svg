@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="id-bg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#fdf4f4"/>
+      <stop offset="100%" stop-color="#f5e1e1"/>
+    </radialGradient>
+    <linearGradient id="id-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe270"/>
+      <stop offset="50%" stop-color="#e5a910"/>
+      <stop offset="100%" stop-color="#a06e00"/>
+    </linearGradient>
+    <filter id="id-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#181520" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Card Surface -->
+  <rect width="800" height="500" rx="32" fill="url(#id-bg)" stroke="#181520" stroke-width="3" stroke-opacity="0.15"/>
+  <rect x="24" y="24" width="752" height="452" rx="20" fill="none" stroke="#181520" stroke-width="1" stroke-opacity="0.1" stroke-dasharray="6 6"/>
+
+  <!-- Merah Putih Flag Top Bar -->
+  <path d="M24 24 L776 24 L776 60 L24 60 Z" fill="#ed1c24" opacity="0.85"/>
+
+  <!-- Garuda Pancasila Iconic Heraldic Geometry -->
+  <g transform="translate(400, 235)" filter="url(#id-shadow)">
+    <!-- Golden Wing Span Left (17 primary flight feathers) -->
+    <path d="M-20 -15 C-60 -50, -140 -65, -170 -40 C-185 -10, -170 30, -135 60 C-105 85, -60 70, -20 30 Z" fill="url(#id-gold)" stroke="#805500" stroke-width="2"/>
+    <path d="M-30 -10 C-75 -35, -145 -45, -165 -25 C-175 0, -155 35, -125 55" fill="none" stroke="#ffe270" stroke-width="3"/>
+
+    <!-- Golden Wing Span Right (17 primary flight feathers) -->
+    <path d="M20 -15 C60 -50, 140 -65, 170 -40 C185 -10, 170 30, 135 60 C105 85, 60 70, 20 30 Z" fill="url(#id-gold)" stroke="#805500" stroke-width="2"/>
+    <path d="M30 -10 C75 -35, 145 -45, 165 -25 C175 0, 155 35, 125 55" fill="none" stroke="#ffe270" stroke-width="3"/>
+
+    <!-- Golden Tail (8 feathers) -->
+    <path d="M-25 70 C-35 110, -20 135, 0 140 C20 135, 35 110, 25 70 Z" fill="url(#id-gold)" stroke="#805500" stroke-width="2"/>
+    <line x1="0" y1="75" x2="0" y2="135" stroke="#ffe270" stroke-width="2"/>
+    <line x1="-12" y1="75" x2="-14" y2="125" stroke="#ffe270" stroke-width="2"/>
+    <line x1="12" y1="75" x2="14" y2="125" stroke="#ffe270" stroke-width="2"/>
+
+    <!-- Garuda Head turned to the right with crown and beak -->
+    <path d="M-15 -35 C-15 -65, 10 -85, 25 -75 C35 -65, 30 -50, 42 -48 C48 -47, 45 -40, 32 -38 C28 -30, 25 -20, 15 -15 C0 -15, -15 -20, -15 -35 Z" fill="url(#id-gold)" stroke="#805500" stroke-width="2"/>
+    <circle cx="20" cy="-60" r="3" fill="#181520"/>
+
+    <!-- Central Heraldic Shield (Perisai Pancasila) -->
+    <g transform="translate(0, 15)">
+      <!-- Outer Heart Shield -->
+      <path d="M0 -42 C35 -42, 48 -25, 48 5 C48 35, 25 55, 0 68 C-25 55, -48 35, -48 5 C-48 -25, -35 -42, 0 -42 Z" fill="#ffffff" stroke="#181520" stroke-width="3"/>
+      
+      <!-- Red / White Quadrants -->
+      <!-- Top Right: Red (Bull / Banteng) -->
+      <path d="M0 -42 C25 -42, 48 -25, 48 5 L0 5 Z" fill="#ed1c24"/>
+      <!-- Bottom Left: Red (Tree / Beringin) -->
+      <path d="M0 5 L-48 5 C-48 35, -25 55, 0 68 Z" fill="#ed1c24"/>
+      <!-- Top Left: White (Beringin) -->
+      <path d="M0 -42 C-25 -42, -48 -25, -48 5 L0 5 Z" fill="#ffffff"/>
+      <!-- Bottom Right: White (Padi & Kapas) -->
+      <path d="M0 5 L48 5 C48 35, 25 55, 0 68 Z" fill="#ffffff"/>
+
+      <!-- Equator Line across shield -->
+      <line x1="-48" y1="5" x2="48" y2="5" stroke="#181520" stroke-width="3"/>
+      <line x1="0" y1="-42" x2="0" y2="68" stroke="#181520" stroke-width="2"/>
+
+      <!-- Golden Star in Black Inset Center (Bintang Ketuhanan) -->
+      <rect x="-14" y="-7" width="28" height="24" rx="4" fill="#181520"/>
+      <polygon points="0,-4 3,3 10,3 5,8 7,14 0,10 -7,14 -5,8 -10,3 -3,3" fill="#ffd700"/>
+    </g>
+
+    <!-- White Scroll Gripped by Claws (Bhinneka Tunggal Ika) -->
+    <g transform="translate(0, 95)">
+      <path d="M-80 0 C-40 -6, 40 -6, 80 0 C70 14, 55 12, 0 10 C-55 12, -70 14, -80 0 Z" fill="#ffffff" stroke="#181520" stroke-width="2"/>
+      <text x="0" y="7" font-family="'Space Grotesk', sans-serif" font-size="7.5" font-weight="700" letter-spacing="0.14em" fill="#181520" text-anchor="middle">BHINNEKA TUNGGAL IKA</text>
+    </g>
+  </g>
+
+  <!-- Typography & Official Metadata -->
+  <text x="400" y="405" font-family="'Space Grotesk', 'Syne', sans-serif" font-size="34" font-weight="700" letter-spacing="0.28em" fill="#181520" text-anchor="middle">INDONESIA</text>
+  <text x="400" y="435" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="600" letter-spacing="0.35em" fill="#ed1c24" text-anchor="middle">REPUBLIK INDONESIA · GARUDA</text>
+
+  <!-- Technical Corner Marks -->
+  <text x="48" y="90" font-family="monospace" font-size="12" fill="#181520" opacity="0.6" letter-spacing="0.1em">FIG. ID-03 // SOUTHEAST ASIA</text>
+  <text x="752" y="90" font-family="monospace" font-size="12" fill="#181520" opacity="0.6" letter-spacing="0.1em" text-anchor="end">LAT 6.2088° S</text>
+  <text x="48" y="465" font-family="monospace" font-size="12" fill="#181520" opacity="0.6" letter-spacing="0.1em">GARUDA PANCASILA · MERAH PUTIH</text>
+  <text x="752" y="465" font-family="monospace" font-size="12" fill="#181520" opacity="0.6" letter-spacing="0.1em" text-anchor="end">NUSANTARA ALLIANCE</text>
+</svg>

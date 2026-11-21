@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-250 -400 500 800" width="1000" height="1600">
+  <defs>
+    <linearGradient id="gold-bright" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5cc"/>
+      <stop offset="30%" stop-color="#f3d162"/>
+      <stop offset="70%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8a6c17"/>
+    </linearGradient>
+    <linearGradient id="gold-accent" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7a5a0c"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#ffe699"/>
+    </linearGradient>
+    <radialGradient id="halo-glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#d4af37" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#181520" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#181520" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Gunungan Outer Silhouette Path -->
+  <!-- Classic Kayon shape: pointed apex at top (0, -360), curving out down to base (0, 260) with central stem to (0, 350) -->
+  <g filter="url(#shadow)">
+    <!-- Main Gunungan Body (Deep Obsidian Glass with Gold Rim) -->
+    <path d="
+      M 0 -360
+      C 40 -300, 110 -200, 155 -90
+      C 195 5, 205 110, 160 210
+      C 130 270, 70 290, 20 295
+      L 15 365
+      L -15 365
+      L -20 295
+      C -70 290, -130 270, -160 210
+      C -205 110, -195 5, -155 -90
+      C -110 -200, -40 -300, 0 -360
+      Z
+    " fill="#181520" fill-opacity="0.9" stroke="url(#gold-bright)" stroke-width="6"/>
+
+    <!-- Inner Inset Border Line -->
+    <path d="
+      M 0 -340
+      C 36 -285, 100 -190, 142 -85
+      C 178 8, 188 105, 148 195
+      C 120 252, 65 272, 18 276
+      L 12 355
+      L -12 355
+      L -18 276
+      C -65 272, -120 252, -148 195
+      C -188 105, -178 8, -142 -85
+      C -100 -190, -36 -285, 0 -340
+      Z
+    " fill="none" stroke="url(#gold-bright)" stroke-width="2.5" stroke-dasharray="8 6"/>
+
+    <!-- Subtle Golden Background Radiance inside Gunungan -->
+    <ellipse cx="0" cy="-30" rx="140" ry="240" fill="url(#halo-glow)"/>
+
+    <!-- POHON HAYAT (TREE OF LIFE) - Central Trunk & Branches -->
+    <g stroke="url(#gold-bright)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Main Central Trunk -->
+      <path d="M 0 260 L 0 -290" stroke-width="7"/>
+      <path d="M -6 260 L -6 -180" stroke-width="2" stroke-opacity="0.6"/>
+      <path d="M 6 260 L 6 -180" stroke-width="2" stroke-opacity="0.6"/>
+
+      <!-- Apex Sun Jewel / Puncak Candi -->
+      <polygon points="0,-330 14,-300 0,-270 -14,-300" fill="url(#gold-bright)"/>
+      <circle cx="0" cy="-300" r="4" fill="#ffffff"/>
+
+      <!-- Primary Upper Branches -->
+      <path d="M 0 -180 C 40 -200, 80 -230, 95 -255 C 105 -240, 75 -210, 30 -170" stroke-width="3.5"/>
+      <path d="M 0 -180 C -40 -200, -80 -230, -95 -255 C -105 -240, -75 -210, -30 -170" stroke-width="3.5"/>
+
+      <!-- Secondary Mid Branches -->
+      <path d="M 0 -110 C 60 -130, 120 -150, 140 -175 C 150 -160, 110 -125, 40 -95" stroke-width="3.5"/>
+      <path d="M 0 -110 C -60 -130, -120 -150, -140 -175 C -150 -160, -110 -125, -40 -95" stroke-width="3.5"/>
+
+      <!-- Tertiary Lower Branches -->
+      <path d="M 0 -40 C 75 -50, 145 -60, 168 -80 C 175 -65, 130 -35, 45 -25" stroke-width="3.5"/>
+      <path d="M 0 -40 C -75 -50, -145 -60, -168 -80 C -175 -65, -130 -35, -45 -25" stroke-width="3.5"/>
+
+      <!-- Lowest Sweeping Branches -->
+      <path d="M 0 35 C 80 30, 150 15, 172 0 C 175 18, 130 50, 45 50" stroke-width="3.5"/>
+      <path d="M 0 35 C -80 30, -150 15, -172 0 C -175 18, -130 50, -45 50" stroke-width="3.5"/>
+
+      <!-- Intricate Leaf Spirals & Batik Foliage (Sulur-Suluran) -->
+      <!-- Left Foliage Spirals -->
+      <path d="M 60 -210 C 75 -200, 75 -180, 55 -175 C 40 -170, 30 -185, 45 -195" stroke-width="2"/>
+      <path d="M -60 -210 C -75 -200, -75 -180, -55 -175 C -40 -170, -30 -185, -45 -195" stroke-width="2"/>
+      <path d="M 90 -140 C 110 -130, 110 -110, 85 -105 C 70 -100, 60 -115, 75 -125" stroke-width="2"/>
+      <path d="M -90 -140 C -110 -130, -110 -110, -85 -105 C -70 -100, -60 -115, -75 -125" stroke-width="2"/>
+      <path d="M 110 -50 C 135 -40, 135 -20, 105 -15 C 90 -10, 80 -25, 95 -35" stroke-width="2"/>
+      <path d="M -110 -50 C -135 -40, -135 -20, -105 -15 C -90 -10, -80 -25, -95 -35" stroke-width="2"/>
+
+      <!-- Stylized Sacred Birds / Garuda Wings (Brahminy Kite motif on sides) -->
+      <path d="M 25 -70 C 50 -100, 85 -85, 80 -60 C 75 -40, 45 -45, 25 -55" fill="url(#gold-bright)" fill-opacity="0.2" stroke-width="2"/>
+      <path d="M -25 -70 C -50 -100, -85 -85, -80 -60 C -75 -40, -45 -45, -25 -55" fill="url(#gold-bright)" fill-opacity="0.2" stroke-width="2"/>
+    </g>
+
+    <!-- GAPURA / CANDI BENTAR (Sacred Portal at the base of Gunungan) -->
+    <g transform="translate(0, 175)" stroke="url(#gold-bright)" stroke-width="3" fill="none">
+      <!-- Portal Roof Steps (Meru) -->
+      <polygon points="0,-75 35,-50 30,-40 -30,-40 -35,-50" fill="url(#gold-bright)"/>
+      <rect x="-45" y="-40" width="90" height="10" fill="url(#gold-bright)" fill-opacity="0.3"/>
+      <rect x="-55" y="-30" width="110" height="12" fill="url(#gold-bright)" fill-opacity="0.3"/>
+
+      <!-- Central Door Archway (Lawang Swarga) -->
+      <path d="M -28 75 L -28 -10 C -28 -28, 28 -28, 28 -10 L 28 75 Z" fill="#181520" stroke="url(#gold-bright)" stroke-width="3"/>
+      <line x1="0" y1="-18" x2="0" y2="75" stroke="url(#gold-bright)" stroke-width="2" stroke-dasharray="6 4"/>
+      <!-- Door Handles -->
+      <circle cx="-10" cy="25" r="4" fill="url(#gold-bright)"/>
+      <circle cx="10" cy="25" r="4" fill="url(#gold-bright)"/>
+
+      <!-- Twin Guardian Pillars (Paduraksa) -->
+      <rect x="-65" y="-18" width="18" height="93" fill="url(#gold-bright)" fill-opacity="0.25"/>
+      <rect x="47" y="-18" width="18" height="93" fill="url(#gold-bright)" fill-opacity="0.25"/>
+      <line x1="-56" y1="-18" x2="-56" y2="75" stroke="url(#gold-bright)" stroke-width="1.5"/>
+      <line x1="56" y1="-18" x2="56" y2="75" stroke="url(#gold-bright)" stroke-width="1.5"/>
+
+      <!-- Base Plinth (Umpak Candi) -->
+      <rect x="-85" y="75" width="170" height="15" rx="3" fill="url(#gold-bright)"/>
+    </g>
+
+    <!-- Base Stem Engravings (Tangkai Cempurit) -->
+    <g transform="translate(0, 310)" stroke="url(#gold-bright)" stroke-width="2" fill="none">
+      <line x1="-10" y1="0" x2="-10" y2="50"/>
+      <line x1="10" y1="0" x2="10" y2="50"/>
+      <line x1="-10" y1="15" x2="10" y2="15"/>
+      <line x1="-10" y1="30" x2="10" y2="30"/>
+      <line x1="-10" y1="45" x2="10" y2="45"/>
+    </g>
+  </g>
+</svg>
